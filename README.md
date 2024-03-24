@@ -1,1 +1,1 @@
-# mz-node
+# Installing Marzban-node in Docker-compose
