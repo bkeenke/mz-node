@@ -7,6 +7,6 @@ sudo bash -c "$(curl -sL https://raw.githubusercontent.com/bkeenke/mz-node/main/
 ## After launch
 Upload your certificate to the server at `/var/lib/marzban-node/ssl_client_cert.pem`
 `nano /var/lib/marzban-node/ssl_client_cert.pem`
-Paste your certificate
-Ctrl+S
-Ctrl+X
+- Paste your certificate
+- Ctrl+S
+- Ctrl+X
