@@ -120,7 +120,8 @@ configure_files() {
     mkdir -p "$DATA_DIR"
     mkdir -p "$APP_DIR/haproxy"
     mkdir -p "/var/lib/marzban-node"
-    read -rp "Введите SNI (discordapp.com): " SNI
+    read -rp "Enter SNI (discordapp.com): " SNI
+    read -rp "Enter VLESS-TCP Port(12000): " PORT
 
     echo
     colorized_echo blue "Editing haproxy.cfg"
@@ -142,7 +143,7 @@ listen front
  
 backend reality
  mode tcp
- server srv2 marzban-node:12000 send-proxy
+ server srv2 marzban-node:$PORT send-proxy
 EOF
     colorized_echo green "Done"
     echo
