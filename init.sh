@@ -119,6 +119,7 @@ configure_files() {
     
     mkdir -p "$DATA_DIR"
     mkdir -p "$APP_DIR/haproxy"
+    mkdir -p "/var/lib/marzban-node"
     read -rp "Введите SNI (discordapp.com): " SNI
 
     echo
