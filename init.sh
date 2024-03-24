@@ -196,6 +196,7 @@ EOF
 up_marzban_node() {
     echo
     colorized_echo blue "Starting Marzban-node"
+    cd $APP_DIR
     $COMPOSE up -d
     colorized_echo green "Done"
 }
