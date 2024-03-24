@@ -184,13 +184,6 @@ services:
       - node
 EOF
     colorized_echo green "Done"
-    echo
-    colorized_echo blue "Pulling and starting images"
-    read -rp "Введите ssl_client_cert: " CERT
-    cat > /var/lib/marzban-node/ssl_client_cert.pem <<EOF
-$CERT
-EOF
-    colorized_echo green "Done"
 }
 
 up_marzban_node() {
