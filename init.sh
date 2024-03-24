@@ -205,7 +205,7 @@ is_node_installed() {
 install_command() {
     check_running_as_root
     if is_node_installed; then
-        colorized_echo red "Marzban is already installed at $APP_DIR"
+        colorized_echo red "Marzban-node is already installed at $APP_DIR"
         exit 1
     fi
     detect_os
