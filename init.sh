@@ -232,5 +232,4 @@ install_command() {
 case "$1" in
     install)
     shift; install_command "$@"
-    usage;;
 esac
